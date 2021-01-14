@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class UserValidatorImpl implements UserValidator {
     @Autowired
     UserValidator userValidator;
-    
+
     public void validateUserRegistration(RegisterRequest registerRequest) throws APIException{
 
     }

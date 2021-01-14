@@ -16,6 +16,7 @@ public class Order {
     @ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinColumn(name = "id")
     @JsonBackReference
+    @Column(name="user_id")
     private User user;
 
 //  TODO: Define the 'Product' field with reference to the Product entity and use the necessary relationship annotation
@@ -35,6 +36,10 @@ public class Order {
 
     private Double amount;
     private LocalDateTime orderDate = LocalDateTime.now();
+
+    public Order() {
+
+    }
 
 //  TODO: Generate getters & setters and constructors for the Entity class
 
