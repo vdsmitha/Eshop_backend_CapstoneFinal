@@ -7,8 +7,6 @@ import com.upgrad.eshop.daos.ShippingAddressRepository;
 import com.upgrad.eshop.daos.UserRepository;
 import com.upgrad.eshop.dtos.OrderRequest;
 import com.upgrad.eshop.dtos.ProductDTO;
-import java.util.List;
-import java.util.Optional;
 import com.upgrad.eshop.dtos.RegisterRequest;
 import com.upgrad.eshop.entities.Order;
 import com.upgrad.eshop.exceptions.OrderNotFoundException;
@@ -17,10 +15,10 @@ import com.upgrad.eshop.exceptions.ShippingAddressNotFoundException;
 import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+import java.util.Optional;
 
-
-public class OrderServiceImpl implements OrderService
-{
+public class OrderServiceImpl implements OrderService {
     @Autowired
     OrderService orderService;
 
@@ -54,11 +52,9 @@ public class OrderServiceImpl implements OrderService
         return savedOrder;
     }
     @Override
-    public Order getOrderById(Long id) throws OrderNotFoundException
-    {
+    public Order getOrderById(Long id) throws OrderNotFoundException{
 
 
-        return null;
     }
     @Override
     public Order saveOrder(Order order){
