@@ -5,7 +5,7 @@ import com.upgrad.eshop.dtos.LoginResponse;
 import com.upgrad.eshop.dtos.RegisterRequest;
 import com.upgrad.eshop.entities.User;
 import com.upgrad.eshop.exceptions.*;
-import com.upgrad.eshop.responseModelinit .CustomResponse;
+import com.upgrad.eshop.responseModel.CustomResponse;
 import com.upgrad.eshop.security.JwtTokenProvider;
 import com.upgrad.eshop.services.UserService;
 import com.upgrad.eshop.validators.UserValidator;
